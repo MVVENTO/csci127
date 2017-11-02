@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_2063d643a4994136b2438a089a3c4bd2 {
+            <style> #map_370319b01b984eb3aa8de030aeefded4 {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -31,7 +31,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_2063d643a4994136b2438a089a3c4bd2" ></div>
+            <div class="folium-map" id="map_370319b01b984eb3aa8de030aeefded4" ></div>
         
 </body>
 <script>    
@@ -43,10 +43,10 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_2063d643a4994136b2438a089a3c4bd2 = L.map(
-                                  'map_2063d643a4994136b2438a089a3c4bd2',
-                                  {center: [40.75,-74.125],
-                                  zoom: 10,
+            var map_370319b01b984eb3aa8de030aeefded4 = L.map(
+                                  'map_370319b01b984eb3aa8de030aeefded4',
+                                  {center: [35,140],
+                                  zoom: 3,
                                   maxBounds: bounds,
                                   layers: [],
                                   worldCopyJump: false,
@@ -55,7 +55,7 @@
             
         
     
-            var tile_layer_f8eaa076b56b453fb176f8e8a47a0c59 = L.tileLayer(
+            var tile_layer_2335bb662f914f1a8f75404bdacd7826 = L.tileLayer(
                 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
@@ -65,29 +65,7 @@
                     attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
                     detectRetina: false
                     }
-                ).addTo(map_2063d643a4994136b2438a089a3c4bd2);
+                ).addTo(map_370319b01b984eb3aa8de030aeefded4);
 
-        
-    
-
-            var marker_6d57d8f0888e415092b662e9017a77bf = L.marker(
-                [40.768731,-73.964915],
-                {
-                    icon: new L.Icon.Default()
-                    }
-                )
-                .addTo(map_2063d643a4994136b2438a089a3c4bd2);
-            
-    
-            var popup_96d0772fb41d4c43b42e075430d8b9f5 = L.popup({maxWidth: '300'});
-
-            
-                var html_cd9be94f62fe44a8aa22fa24f32508ef = $('<div id="html_cd9be94f62fe44a8aa22fa24f32508ef" style="width: 100.0%; height: 100.0%;">Hunter College</div>')[0];
-                popup_96d0772fb41d4c43b42e075430d8b9f5.setContent(html_cd9be94f62fe44a8aa22fa24f32508ef);
-            
-
-            marker_6d57d8f0888e415092b662e9017a77bf.bindPopup(popup_96d0772fb41d4c43b42e075430d8b9f5);
-
-            
         
 </script>

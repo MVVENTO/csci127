@@ -22,5 +22,6 @@ def plot(a):
 
 
 if __name__=="__main__":
-    random_walks=random_walk(3,1000)
+
+    random_walks=random_walk(1000,2000)
     plot(random_walks)

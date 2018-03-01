@@ -6,11 +6,6 @@
 import matplotlib.pyplot as plt  
 import numpy as np
 
-"""
-file_name = "csBridge.png"
-file_name = "hunter.jpg"
-img = plt.imread(file_name)   #Read in image from csBridge.png
-"""
 img = np.zeros((2,2,3))
 
 
@@ -53,7 +48,7 @@ img[1,1,2] = 255
 
 print (img.shape)
 print(img)
-img /= 255.
+img = img/255.
 plt.imshow(img,interpolation = 'nearest')		           #Load image into pyplot
 plt.show()                         #Show the image (waits until closed to continue)
 

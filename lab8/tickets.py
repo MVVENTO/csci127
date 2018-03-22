@@ -14,3 +14,5 @@ print(tickets["Plate ID"].value_counts())	#Print out plates & number of tickets 
 print(tickets["Plate ID"].value_counts()[:10])	#Print 10 worst & number of tickets 
 
 
+
+print(tickets["Vehicle Color"].value_counts()[:10])

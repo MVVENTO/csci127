@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster-src.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_a6248f5f797846dabcfcb53319191d4e {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_a6248f5f797846dabcfcb53319191d4e" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var southWest = L.latLng(-90, -180);
+                var northEast = L.latLng(90, 180);
+                var bounds = L.latLngBounds(southWest, northEast);
+            
+
+            var map_a6248f5f797846dabcfcb53319191d4e = L.map(
+                                  'map_a6248f5f797846dabcfcb53319191d4e',
+                                  {center: [40.768731,-73.964915],
+                                  zoom: 10,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_c5f819549b114888ab65e7ba575903bc = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    continuousWorld: false,
+                    noWrap: false,
+                    attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_a6248f5f797846dabcfcb53319191d4e);
+
+        
+    
+
+            var marker_0a928961ebc045c2be2ef53f793ed43a = L.marker(
+                [40.740977,-73.984252],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_a6248f5f797846dabcfcb53319191d4e);
+            
+    
+            var popup_342378cb31204a198431d6db1927c79c = L.popup({maxWidth: '300'});
+
+            
+                var html_1ecdf1d70f01416e824746f5baeb510c = $('<div id="html_1ecdf1d70f01416e824746f5baeb510c" style="width: 100.0%; height: 100.0%;">Baruch College</div>')[0];
+                popup_342378cb31204a198431d6db1927c79c.setContent(html_1ecdf1d70f01416e824746f5baeb510c);
+            
+
+            marker_0a928961ebc045c2be2ef53f793ed43a.bindPopup(popup_342378cb31204a198431d6db1927c79c);
+
+            
+        
+    
+
+            var marker_dff58007ab914110bf3846ab9035d2d9 = L.marker(
+                [40.630276,-73.955545],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_a6248f5f797846dabcfcb53319191d4e);
+            
+    
+            var popup_c029b38328904dfcab63ed1043c2a69a = L.popup({maxWidth: '300'});
+
+            
+                var html_546e49b014d848f694513c1f4cbb6244 = $('<div id="html_546e49b014d848f694513c1f4cbb6244" style="width: 100.0%; height: 100.0%;">Brooklyn College</div>')[0];
+                popup_c029b38328904dfcab63ed1043c2a69a.setContent(html_546e49b014d848f694513c1f4cbb6244);
+            
+
+            marker_dff58007ab914110bf3846ab9035d2d9.bindPopup(popup_c029b38328904dfcab63ed1043c2a69a);
+
+            
+        
+    
+
+            var marker_6a2882dccbec406a839546f00727c11b = L.marker(
+                [40.717366999999996,-74.012178],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_a6248f5f797846dabcfcb53319191d4e);
+            
+    
+            var popup_b20a477d2cb244f1bc2f80abb2ef0cb0 = L.popup({maxWidth: '300'});
+
+            
+                var html_2660ffb42520463ab43eca90b5ac3b71 = $('<div id="html_2660ffb42520463ab43eca90b5ac3b71" style="width: 100.0%; height: 100.0%;">Borough of Manhattan Community College</div>')[0];
+                popup_b20a477d2cb244f1bc2f80abb2ef0cb0.setContent(html_2660ffb42520463ab43eca90b5ac3b71);
+            
+
+            marker_6a2882dccbec406a839546f00727c11b.bindPopup(popup_b20a477d2cb244f1bc2f80abb2ef0cb0);
+
+            
+        
+    
+
+            var marker_019f3887b2294f4faf5e079e6f896083 = L.marker(
+                [40.856673,-73.910127],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_a6248f5f797846dabcfcb53319191d4e);
+            
+    
+            var popup_6db7198b961b46a48508d67669cc882a = L.popup({maxWidth: '300'});
+
+            
+                var html_7d9e961756a44efa8382891cf25fac3a = $('<div id="html_7d9e961756a44efa8382891cf25fac3a" style="width: 100.0%; height: 100.0%;">Bronx Community College</div>')[0];
+                popup_6db7198b961b46a48508d67669cc882a.setContent(html_7d9e961756a44efa8382891cf25fac3a);
+            
+
+            marker_019f3887b2294f4faf5e079e6f896083.bindPopup(popup_6db7198b961b46a48508d67669cc882a);
+
+            
+        
+    
+
+            var marker_0ffcfdb97c3a4306b803a952823d49c0 = L.marker(
+                [40.819548,-73.94951800000001],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_a6248f5f797846dabcfcb53319191d4e);
+            
+    
+            var popup_ceb0f005915c469e85cd4b71f80176ae = L.popup({maxWidth: '300'});
+
+            
+                var html_8f7b56a117404f2cb3ecef19fafa3d44 = $('<div id="html_8f7b56a117404f2cb3ecef19fafa3d44" style="width: 100.0%; height: 100.0%;">The City College of New York</div>')[0];
+                popup_ceb0f005915c469e85cd4b71f80176ae.setContent(html_8f7b56a117404f2cb3ecef19fafa3d44);
+            
+
+            marker_0ffcfdb97c3a4306b803a952823d49c0.bindPopup(popup_ceb0f005915c469e85cd4b71f80176ae);
+
+            
+        
+    
+
+            var marker_d569534f67724d6cac6057ae9a2f3936 = L.marker(
+                [40.747639,-73.943676],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_a6248f5f797846dabcfcb53319191d4e);
+            
+    
+            var popup_98eabbd92ae04530b2f8d249aa603c55 = L.popup({maxWidth: '300'});
+
+            
+                var html_95372010a85a48d78236e81baa7c964d = $('<div id="html_95372010a85a48d78236e81baa7c964d" style="width: 100.0%; height: 100.0%;">CUNY School of Law</div>')[0];
+                popup_98eabbd92ae04530b2f8d249aa603c55.setContent(html_95372010a85a48d78236e81baa7c964d);
+            
+
+            marker_d569534f67724d6cac6057ae9a2f3936.bindPopup(popup_98eabbd92ae04530b2f8d249aa603c55);
+
+            
+        
+    
+
+            var marker_303cd149f5c146bea1812a196e97a452 = L.marker(
+                [40.748723999999996,-73.984205],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_a6248f5f797846dabcfcb53319191d4e);
+            
+    
+            var popup_2194307e733c4ff3844991000d9e5823 = L.popup({maxWidth: '300'});
+
+            
+                var html_0ac39961f8eb49228778ebe2b276556e = $('<div id="html_0ac39961f8eb49228778ebe2b276556e" style="width: 100.0%; height: 100.0%;">The Graduate School and University Center</div>')[0];
+                popup_2194307e733c4ff3844991000d9e5823.setContent(html_0ac39961f8eb49228778ebe2b276556e);
+            
+
+            marker_303cd149f5c146bea1812a196e97a452.bindPopup(popup_2194307e733c4ff3844991000d9e5823);
+
+            
+        
+    
+
+            var marker_185cc837288c434ba80c2e385254c698 = L.marker(
+                [40.768731,-73.964915],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_a6248f5f797846dabcfcb53319191d4e);
+            
+    
+            var popup_caf15388a50344298288b67e3c5d1043 = L.popup({maxWidth: '300'});
+
+            
+                var html_c08c3932f9e845869b57801a8fc21893 = $('<div id="html_c08c3932f9e845869b57801a8fc21893" style="width: 100.0%; height: 100.0%;">Hunter College</div>')[0];
+                popup_caf15388a50344298288b67e3c5d1043.setContent(html_c08c3932f9e845869b57801a8fc21893);
+            
+
+            marker_185cc837288c434ba80c2e385254c698.bindPopup(popup_caf15388a50344298288b67e3c5d1043);
+
+            
+        
+    
+
+            var marker_a809df119b75491fa2a81ecd668065a4 = L.marker(
+                [40.817828000000006,-73.926862],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_a6248f5f797846dabcfcb53319191d4e);
+            
+    
+            var popup_394126449b5c41668b9b844fe0fdc6c7 = L.popup({maxWidth: '300'});
+
+            
+                var html_ce69ed7b4c2c443fa9eca33d5a0c04cb = $('<div id="html_ce69ed7b4c2c443fa9eca33d5a0c04cb" style="width: 100.0%; height: 100.0%;">Hostos Community College</div>')[0];
+                popup_394126449b5c41668b9b844fe0fdc6c7.setContent(html_ce69ed7b4c2c443fa9eca33d5a0c04cb);
+            
+
+            marker_a809df119b75491fa2a81ecd668065a4.bindPopup(popup_394126449b5c41668b9b844fe0fdc6c7);
+
+            
+        
+    
+
+            var marker_cd808017ae604e7fa15a0ec24f165003 = L.marker(
+                [40.769939,-73.986469],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_a6248f5f797846dabcfcb53319191d4e);
+            
+    
+            var popup_4a7bbcb039224d208a853d9cb9864af5 = L.popup({maxWidth: '300'});
+
+            
+                var html_776b781a9a4f4de9abf1b960d7d1517c = $('<div id="html_776b781a9a4f4de9abf1b960d7d1517c" style="width: 100.0%; height: 100.0%;">John Jay College of Criminal Justice</div>')[0];
+                popup_4a7bbcb039224d208a853d9cb9864af5.setContent(html_776b781a9a4f4de9abf1b960d7d1517c);
+            
+
+            marker_cd808017ae604e7fa15a0ec24f165003.bindPopup(popup_4a7bbcb039224d208a853d9cb9864af5);
+
+            
+        
+    
+
+            var marker_8664cb1a28154081a755fdd73f886cba = L.marker(
+                [40.578348999999996,-73.934465],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_a6248f5f797846dabcfcb53319191d4e);
+            
+    
+            var popup_52561935a5844f4b9e949888703c9152 = L.popup({maxWidth: '300'});
+
+            
+                var html_02476aed3d044677815bf65fe6a47479 = $('<div id="html_02476aed3d044677815bf65fe6a47479" style="width: 100.0%; height: 100.0%;">Kingsborough Community College</div>')[0];
+                popup_52561935a5844f4b9e949888703c9152.setContent(html_02476aed3d044677815bf65fe6a47479);
+            
+
+            marker_8664cb1a28154081a755fdd73f886cba.bindPopup(popup_52561935a5844f4b9e949888703c9152);
+
+            
+        
+    
+
+            var marker_eb7d35b3fb6e47cb9388125be2de6958 = L.marker(
+                [40.873442,-73.889361],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_a6248f5f797846dabcfcb53319191d4e);
+            
+    
+            var popup_4b771e1d93dc4a6d8b926712239e30a0 = L.popup({maxWidth: '300'});
+
+            
+                var html_f178cf30d54448d7afb5176a48f929ab = $('<div id="html_f178cf30d54448d7afb5176a48f929ab" style="width: 100.0%; height: 100.0%;">Lehman College</div>')[0];
+                popup_4b771e1d93dc4a6d8b926712239e30a0.setContent(html_f178cf30d54448d7afb5176a48f929ab);
+            
+
+            marker_eb7d35b3fb6e47cb9388125be2de6958.bindPopup(popup_4b771e1d93dc4a6d8b926712239e30a0);
+
+            
+        
+    
+
+            var marker_807ce14051814c0ab695d8066e4134e4 = L.marker(
+                [40.743951,-73.935154],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_a6248f5f797846dabcfcb53319191d4e);
+            
+    
+            var popup_1243807ec99c4bf2ba286c07356352f9 = L.popup({maxWidth: '300'});
+
+            
+                var html_5d050ff3c6f44b9f8a06d2d9fd84ab69 = $('<div id="html_5d050ff3c6f44b9f8a06d2d9fd84ab69" style="width: 100.0%; height: 100.0%;">LaGuardia Community College</div>')[0];
+                popup_1243807ec99c4bf2ba286c07356352f9.setContent(html_5d050ff3c6f44b9f8a06d2d9fd84ab69);
+            
+
+            marker_807ce14051814c0ab695d8066e4134e4.bindPopup(popup_1243807ec99c4bf2ba286c07356352f9);
+
+            
+        
+    
+
+            var marker_d90c516b62db4a9ca2badab63618d93a = L.marker(
+                [40.66624,-73.957349],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_a6248f5f797846dabcfcb53319191d4e);
+            
+    
+            var popup_88bdd1a4581841fb96793670c4cf3466 = L.popup({maxWidth: '300'});
+
+            
+                var html_acc8d7547b3b4ccfba7e7ff9d59ff7d3 = $('<div id="html_acc8d7547b3b4ccfba7e7ff9d59ff7d3" style="width: 100.0%; height: 100.0%;">Medgar Evers College</div>')[0];
+                popup_88bdd1a4581841fb96793670c4cf3466.setContent(html_acc8d7547b3b4ccfba7e7ff9d59ff7d3);
+            
+
+            marker_d90c516b62db4a9ca2badab63618d93a.bindPopup(popup_88bdd1a4581841fb96793670c4cf3466);
+
+            
+        
+    
+
+            var marker_0bff401b9b6d44aa8c067957f717d75e = L.marker(
+                [40.695507,-73.987882],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_a6248f5f797846dabcfcb53319191d4e);
+            
+    
+            var popup_1ab9c1da33064a63bf0ddfd24c0c066d = L.popup({maxWidth: '300'});
+
+            
+                var html_726655bb34ef4f97b56ee803b7b875e5 = $('<div id="html_726655bb34ef4f97b56ee803b7b875e5" style="width: 100.0%; height: 100.0%;">New York City College of Technology</div>')[0];
+                popup_1ab9c1da33064a63bf0ddfd24c0c066d.setContent(html_726655bb34ef4f97b56ee803b7b875e5);
+            
+
+            marker_0bff401b9b6d44aa8c067957f717d75e.bindPopup(popup_1ab9c1da33064a63bf0ddfd24c0c066d);
+
+            
+        
+    
+
+            var marker_720f201a23604191aed22c4662d34900 = L.marker(
+                [40.744988,-73.81644399999999],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_a6248f5f797846dabcfcb53319191d4e);
+            
+    
+            var popup_ee027ad798214676a92b91e34b519034 = L.popup({maxWidth: '300'});
+
+            
+                var html_660f52776d9841f3b1bd69f551804b4d = $('<div id="html_660f52776d9841f3b1bd69f551804b4d" style="width: 100.0%; height: 100.0%;">Queensborough Community College</div>')[0];
+                popup_ee027ad798214676a92b91e34b519034.setContent(html_660f52776d9841f3b1bd69f551804b4d);
+            
+
+            marker_720f201a23604191aed22c4662d34900.bindPopup(popup_ee027ad798214676a92b91e34b519034);
+
+            
+        
+    
+
+            var marker_80245d37783245c8a8d7b9e897d1a207 = L.marker(
+                [40.736315999999995,-73.820035],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_a6248f5f797846dabcfcb53319191d4e);
+            
+    
+            var popup_1792dc57b7bf4bbb88a72921d8aa0440 = L.popup({maxWidth: '300'});
+
+            
+                var html_ee658e02833c457cb4648dfccb842517 = $('<div id="html_ee658e02833c457cb4648dfccb842517" style="width: 100.0%; height: 100.0%;">Queens College</div>')[0];
+                popup_1792dc57b7bf4bbb88a72921d8aa0440.setContent(html_ee658e02833c457cb4648dfccb842517);
+            
+
+            marker_80245d37783245c8a8d7b9e897d1a207.bindPopup(popup_1792dc57b7bf4bbb88a72921d8aa0440);
+
+            
+        
+    
+
+            var marker_18fe8312aae746c2ad14af4f1804ad53 = L.marker(
+                [40.608647999999995,-74.153563],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_a6248f5f797846dabcfcb53319191d4e);
+            
+    
+            var popup_17865d77364344aca0f01e537aa6c409 = L.popup({maxWidth: '300'});
+
+            
+                var html_aa7c674d92d04f6e8d7919c18e7fb95f = $('<div id="html_aa7c674d92d04f6e8d7919c18e7fb95f" style="width: 100.0%; height: 100.0%;">College of Staten Island</div>')[0];
+                popup_17865d77364344aca0f01e537aa6c409.setContent(html_aa7c674d92d04f6e8d7919c18e7fb95f);
+            
+
+            marker_18fe8312aae746c2ad14af4f1804ad53.bindPopup(popup_17865d77364344aca0f01e537aa6c409);
+
+            
+        
+    
+
+            var marker_ca4ca129edda447d9ebcbb07f7095ff7 = L.marker(
+                [40.702821,-73.795776],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_a6248f5f797846dabcfcb53319191d4e);
+            
+    
+            var popup_553dd177744e44c881d6429ff5f9953e = L.popup({maxWidth: '300'});
+
+            
+                var html_458e84ce1c78421ea26bdcef296d883e = $('<div id="html_458e84ce1c78421ea26bdcef296d883e" style="width: 100.0%; height: 100.0%;">York College</div>')[0];
+                popup_553dd177744e44c881d6429ff5f9953e.setContent(html_458e84ce1c78421ea26bdcef296d883e);
+            
+
+            marker_ca4ca129edda447d9ebcbb07f7095ff7.bindPopup(popup_553dd177744e44c881d6429ff5f9953e);
+
+            
+        
+    
+
+            var marker_b02ccfa3231f4a65ba6fae1ba0cc2b61 = L.marker(
+                [40.752846000000005,-73.984133],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_a6248f5f797846dabcfcb53319191d4e);
+            
+    
+            var popup_6f71b275b0414f23a27c0169f85e06c3 = L.popup({maxWidth: '300'});
+
+            
+                var html_4395d2e7043943888a7c93097ce1387d = $('<div id="html_4395d2e7043943888a7c93097ce1387d" style="width: 100.0%; height: 100.0%;">Guttman Community College</div>')[0];
+                popup_6f71b275b0414f23a27c0169f85e06c3.setContent(html_4395d2e7043943888a7c93097ce1387d);
+            
+
+            marker_b02ccfa3231f4a65ba6fae1ba0cc2b61.bindPopup(popup_6f71b275b0414f23a27c0169f85e06c3);
+
+            
+        
+    
+
+            var marker_9bee2cdc27e8469580605af7b58fc536 = L.marker(
+                [40.748151,-73.989723],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_a6248f5f797846dabcfcb53319191d4e);
+            
+    
+            var popup_652e5c255ba44ad7820a9de922843baa = L.popup({maxWidth: '300'});
+
+            
+                var html_d0be96d0342449e09467ceb7e477633c = $('<div id="html_d0be96d0342449e09467ceb7e477633c" style="width: 100.0%; height: 100.0%;">School of Professional Studies</div>')[0];
+                popup_652e5c255ba44ad7820a9de922843baa.setContent(html_d0be96d0342449e09467ceb7e477633c);
+            
+
+            marker_9bee2cdc27e8469580605af7b58fc536.bindPopup(popup_652e5c255ba44ad7820a9de922843baa);
+
+            
+        
+    
+
+            var marker_d000254b1b1a40219c90111b08054aeb = L.marker(
+                [40.755342999999996,-73.988846],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_a6248f5f797846dabcfcb53319191d4e);
+            
+    
+            var popup_adcca19c32ef4d0698f53121ac5df90b = L.popup({maxWidth: '300'});
+
+            
+                var html_031179be16c24117be9c9372dc4dbff3 = $('<div id="html_031179be16c24117be9c9372dc4dbff3" style="width: 100.0%; height: 100.0%;">School of Journalism</div>')[0];
+                popup_adcca19c32ef4d0698f53121ac5df90b.setContent(html_031179be16c24117be9c9372dc4dbff3);
+            
+
+            marker_d000254b1b1a40219c90111b08054aeb.bindPopup(popup_adcca19c32ef4d0698f53121ac5df90b);
+
+            
+        
+</script>

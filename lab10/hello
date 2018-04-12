@@ -1,0 +1,8 @@
+#your name here
+#October 2017
+#Shell script:  creates directories for project
+mkdir projectFiles
+cd projectFiles
+mkdir source
+mkdir data
+mkdir results

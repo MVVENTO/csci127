@@ -7,7 +7,7 @@ using namespace std; //The names of standard definitions
 
 int main ()          //C++ programs all have a main() function
 {
-unsigned int8 a=4294967295;
+unsigned int a=1;
 cout << a<<endl;  
 a+=1;
 
